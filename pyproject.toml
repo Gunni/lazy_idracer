@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lazy_idracer"
+version = "0.1.0a1"
+description = "Interactive Dell iDRAC fleet configuration, power control, and firmware updates"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["httpx[http2]>=0.27,<1", "rich>=13,<15"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent",
+  "Topic :: System :: Systems Administration",
+]
+
+[project.optional-dependencies]
+dev = ["build>=1.2", "twine>=5"]
+
+[project.scripts]
+lazy-idracer = "lazy_idracer.cli:entrypoint"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

@@ -1,0 +1,7 @@
+hosts = ["idrac-01.example.net", "idrac-02.example.net"]
+user = "administrator"
+# Optional private CA bundle; relative paths resolve beside this inventory.
+# ca = "certs/idrac-ca.pem"
+# Required for --discover-updates (HTTP or HTTPS).
+# update_repository = "https://firmware.example.net/"
+
