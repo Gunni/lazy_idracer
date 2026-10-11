@@ -28,4 +28,3 @@ lazy-idracer = "lazy_idracer.cli:entrypoint"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-

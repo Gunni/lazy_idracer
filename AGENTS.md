@@ -23,4 +23,3 @@
   `systemd-run --user --collect [--no-block] [--wait] [--pipe] [--pty] -p RuntimeMaxSec=Ns --unit="<agent>-<session>-<task>"`.
   Choose a sensible runtime limit. For noninteractive commands read the last
   three log lines with `journalctl --user -u "<unit>.service" -n 3 --no-pager`.
-

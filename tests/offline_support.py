@@ -23,5 +23,3 @@ class Clock:
 
     def sleep(self, seconds):
         self.now += seconds
-
-

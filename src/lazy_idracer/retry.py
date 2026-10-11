@@ -18,4 +18,3 @@ def telemetry_retry_delay(exc):
         return math.ceil(seconds) if math.isfinite(seconds) and seconds > 0 else None
     except (ValueError, TypeError, KeyError):
         return None
-

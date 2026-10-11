@@ -104,4 +104,3 @@ They do not establish compatibility with every Dell model. A full server
 simulator is not required; add realistic HTTP fixtures when behavior warrants it.
 
 MIT licensed. No affiliation with Dell.
-

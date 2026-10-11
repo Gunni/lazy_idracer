@@ -26,4 +26,3 @@ def save(path, data):
 
 def snapshot(hosts, args):
     save(args.snapshot, {h.name: {'resources': h.resources, 'errors': h.errors} for h in hosts})
-
